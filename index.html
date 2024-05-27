@@ -1,121 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="favicon/site.webmanifest" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script
-      src="https://kit.fontawesome.com/1126a6c399.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
     <title>Parth Vyas</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="themeSwitch.js"></script>
   </head>
   <body>
-    <nav id="navbar">
-      <ul class="nav-links">
-        <li><a href="#welcome-section">About</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <span class="fs-3">
+          Hi, I'm Parth, Developer.
+          <small class="text-body-secondary">Check Out My Work.</small>
+        </span>
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="themeSwitch"
+          autocomplete="off"
+        />
+        <label class="btn" for="themeSwitch"
+          ><i id="themeIcon" class="bi bi-moon-fill"></i
+        ></label>
+      </div>
     </nav>
-    <section id="welcome-section">
-      <h1>Hey! Parth here</h1>
-      <h4>Full stack Developer</h4>
-    </section>
-    <section id="projects">
-      <h3>These are some of my projects</h3>
-      <div class="project-grid">
-        <div class="project">
-          <a
-            class="project-link"
-            target="_blank"
-            href="http://writingsdev.rf.gd/"
-          >
-            <img class="project-img" src="./assets/p1.png" loading="lazy"/>
-          </a>
-          <h4 class="project-title">
-            <a target="_blank" href="https://github.com/parthvyas7/writings.dev"
-              >Writings.Dev Blog</a
-            >
-          </h4>
+    <div class="container-fluid py-3">
+      <div class="row justify-content-center">
+        <div class="card m-2 p-2 bg-body-tertiary" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/p1.png" class="img-fluid rounded" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Writings.Dev Blogs</h5>
+                <p class="card-text">Blog page for developers</p>
+                <p class="card-text">
+                  <span class="badge rounded-pill text-bg-secondary">HTML</span>
+                  <span class="badge rounded-pill text-bg-secondary">CSS</span>
+                </p>
+                <a
+                  target="_blank"
+                  href="http://writingsdev.rf.gd/"
+                  class="btn btn-primary"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="project">
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://parthvyas7.github.io/barebones-textutils/"
-          >
-            <img class="project-img" src="./assets/p2.png" loading="lazy"/>
-          </a>
-          <h4 class="project-title">
-            <a
-              target="_blank"
-              href="https://github.com/parthvyas7/barebones-textutils"
-              >Barebones TextUtils</a
-            >
-          </h4>
+        <div class="card m-2 p-2 bg-body-tertiary" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/p2.png" class="img-fluid rounded" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Barebones TextUtils</h5>
+                <p class="card-text">
+                  Clean UI for quick text manipulations - convert to uppercase,
+                  lowercase, remove extra spaces.
+                </p>
+                <p class="card-text">
+                  <span class="badge rounded-pill text-bg-secondary"
+                    >React.js</span
+                  >
+                  <span class="badge rounded-pill text-bg-secondary"
+                    >Bootstrap</span
+                  >
+                </p>
+                <a
+                  target="_blank"
+                  href="https://parthvyas7.github.io/barebones-textutils/"
+                  class="btn btn-primary"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="project">
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://github.com/parthvyas7/cnotes"
-          >
-            <img class="project-img" src="/assets/p3.jpg" loading="lazy"/>
-          </a>
-          <h4 class="project-title">
-            <a target="_blank" href="https://github.com/parthvyas7/cnotes"
-              >Cloud Notes</a
-            >
-          </h4>
+        <div class="card m-2 p-2 bg-body-tertiary" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="/assets/p3.jpg" class="img-fluid rounded" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Cloud Notes</h5>
+                <p class="card-text">
+                  Cloud Notes note-taking web app. Create, edit, delete, search
+                  notes, also includes a user authentication with clean UI for
+                  easy organization.
+                </p>
+                <p class="card-text">
+                  <span class="badge rounded-pill text-bg-secondary"
+                    >Node.js</span
+                  >
+                  <span class="badge rounded-pill text-bg-secondary"
+                    >Express.js</span
+                  >
+                  <span class="badge rounded-pill text-bg-secondary"
+                    >React.js</span
+                  >
+                  <span class="badge rounded-pill text-bg-secondary"
+                    >MongoDB</span
+                  >
+                </p>
+                <a
+                  target="_blank"
+                  href="https://github.com/parthvyas7/cnotes"
+                  class="btn btn-primary"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="project">
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://github.com/parthvyas7/Newws"
-          >
-            <img class="project-img" src="./assets/p4.jpg" loading="lazy"/>
-          </a>
-          <h4 class="project-title">
-            <a target="_blank" href="https://github.com/parthvyas7/Newws"
-              >Newws App</a
-            >
-          </h4>
+        <div class="card m-2 p-2 bg-body-tertiary" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/p4.jpg" class="img-fluid rounded" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Newws</h5>
+                <p class="card-text">
+                  News aggregator to browse articles from various publishers and
+                  magazines, view articles by source or category, uses NewsAPI
+                  integration.
+                </p>
+                <p class="card-text">
+                  <span class="badge rounded-pill text-bg-secondary"
+                    >React.js</span
+                  >
+                  <span class="badge rounded-pill text-bg-secondary"
+                    >Axios</span
+                  >
+                </p>
+                <a
+                  target="_blank"
+                  href="https://github.com/parthvyas7/Newws"
+                  class="btn btn-primary"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <button>
-        <a target="_blank" href="https://github.com/parthvyas7?tab=repositories"
-          ><span>Show all</span></a
-        >
-      </button>
-    </section>
-    <section id="contact">
-      <h3>Let's work together...</h3>
-      <div class="contact-links">
+      <div class="text-center">
         <a
-          class="profile-link"
+          class="btn btn-primary"
           target="_blank"
-          id="profile-link"
-          href="https://www.linkedin.com/in/parthvyas7/"
+          href="https://github.com/parthvyas7?tab=repositories"
+          >Show all</a
         >
-          <i class="fa-brands fa-linkedin"></i>LinkedIn
-        </a>
-        <a class="profile-link" href="https://github.com/parthvyas7">
-          <i class="fa-brands fa-github"></i>GitHub</a
-        >
-        <a class="profile-link" href="mailto:itspv7@gmail.com">
-          <i class="fa-solid fa-envelope"></i>Email
-        </a>
       </div>
-    </section>
-    <footer>
-      <span>Destined to be Designed <i class="fa-solid fa-pen-nib"></i></span>
-    </footer>
+    </div>
+    <div class="container-fluid bg-body-tertiary text-center py-3">
+      <p class="fs-4 fw-light">Get in touch with me</p>
+      <a
+        class="btn"
+        target="_blank"
+        href="https://www.linkedin.com/in/parthvyas7/"
+      >
+        <i class="bi bi-linkedin"></i> LinkedIn
+      </a>
+      <a
+        class="btn"
+        target="_blank"
+        href="https://github.com/parthvyas7"
+      >
+        <i class="bi bi-github"></i> GitHub</a
+      >
+      <a
+        class="btn"
+        target="_blank"
+        href="mailto:itspv7@gmail.com"
+      >
+        <i class="bi bi-envelope-at-fill"></i> Email
+      </a>
+      <p class="fs-6 fw-lighter mt-3 mb-0">
+        Destined to be Designed <i class="bi bi-vector-pen"></i>
+      </p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

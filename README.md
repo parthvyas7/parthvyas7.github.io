@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-This is a HTML and CSS based personal portfolio project. It showcases my skills, projects, and contact information in a clean and minimalist design.
+This is my Portfolio page. It showcases my skills, projects, and contact information in a clean and minimalist design.
 
 ## Usage/Examples
 
