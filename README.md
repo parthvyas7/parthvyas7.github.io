@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-This is my Portfolio page. It showcases my skills, projects, and contact information in a clean and minimalist design.
+This is my Portfolio page. It showcases my skills, projects, and social media handles in a clean fashion.
 
 ## Usage/Examples
 
