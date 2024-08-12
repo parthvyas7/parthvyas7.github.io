@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <link
       rel="apple-touch-icon"
@@ -22,179 +22,292 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="output.css" rel="stylesheet" />
     <title>Parth Vyas</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
   </head>
-  <body>
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <span class="fs-3">
-          Hi, I'm Parth, Developer.
-          <small class="text-body-secondary">Check Out My Work.</small>
-        </span>
+  <body class="bg-gray-100">
+    <nav
+      class="fixed w-full bg-white shadow z-10 bg-opacity-80 backdrop-filter backdrop-blur-xl"
+    >
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8"
+      >
+        <div class="inline-flex items-center space-x-2">
+          <a href="#top"
+            ><span class="font-bold text-gray-700 hover:text-gray-950"
+              >PV</span
+            ></a
+          >
+        </div>
+        <div class="lg:block">
+          <ul class="inline-flex space-x-6">
+            <li>
+              <a
+                href="#work"
+                class="font-semibold text-gray-700 hover:text-gray-950"
+              >
+                Work
+              </a>
+            </li>
+            <li>
+              <a
+                href="#connect"
+                class="font-semibold text-gray-700 hover:text-gray-950"
+              >
+                Connect
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-6 w-6 cursor-pointer"
+          >
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </div>
       </div>
     </nav>
-    <div class="container-fluid py-3">
-      <div class="row justify-content-center">
-        <div class="card m-2 p-2 bg-body-tertiary" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="./images/p1.png" class="img-fluid rounded" alt="..." />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h4 class="card-title">Writings.Dev Blogs</h4>
-                <p class="card-text">
-                  Blog page for developers. The page is designed to display blog
-                  posts in a clean and minimalistic layout.
-                </p>
-                <p class="card-text">
-                  <span class="badge text-bg-secondary">HTML</span>
-                  <span class="badge text-bg-secondary">CSS</span>
-                </p>
-                <a
-                  target="_blank"
-                  href="http://writingsdev.rf.gd/"
-                  class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fs-5"
-                  >View
-                </a>
-              </div>
-            </div>
-          </div>
+    <section class="flex flex-col h-screen py-24 px-8 md:p-16 justify-center">
+      <h1 class="text-2xl py-2 md:text-4xl lg:text-6xl text-gray-950">
+        Hi👋, I'm <span class="font-bold uppercase">Parth Vyas</span>
+      </h1>
+      <p class="md:text-lg text-gray-700">
+        Developer, problem-solver, and tech enthusiast with a passion for
+        building software that makes a difference.
+      </p>
+      <h3 class="text-xl py-2 md:text-2xl text-gray-950">
+        Technologies I work with
+      </h3>
+      <ul class="md:text-lg text-gray-700">
+        <li>React.js, Redux-toolkit, React-router</li>
+        <li>Tailwind CSS, Material UI</li>
+        <li>Node.js, Express.js</li>
+        <li>MongoDB, PostgreSQL</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+    <section id="work" class="p-2 md:px-4">
+      <div class="text-xl py-4 md:text-2xl text-center text-gray-950">
+        <h3>Projects</h3>
+      </div>
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+        <div class="block bg-white p-4 mx-auto shadow rounded">
+          <img
+            alt="StoryStream"
+            src="/images/StoryStream.webp"
+            class="h-64 w-full object-contain sm:h-80 lg:h-96 max-w-md"
+            width="600"
+            height="800"
+            loading="lazy"
+          />
+          <h3 class="mt-2 text-lg font-bold text-gray-950 sm:text-xl">
+            StoryStream
+          </h3>
+          <p class="my-2 max-w-sm text-gray-700">
+            Modern blogging platform optimized for concise content delivery,
+            uses React, Redux-toolkit, React-hook-form, TinyMCE rich text editor
+            on frontend and Appwrite BaaS
+          </p>
+          <a
+            class="mr-4 text-gray-700 underline underline-offset-4 decoration-dotted hover:text-gray-950 hover:decoration-solid"
+            target="_blank"
+            href="https://main.d1s3h2qizym52j.amplifyapp.com/"
+            >View</a
+          >
+          <a
+            class="mr-4 text-gray-700 underline underline-offset-4 decoration-dotted hover:text-gray-950 hover:decoration-solid"
+            target="_blank"
+            href="https://github.com/parthvyas7/storystream"
+            >Code</a
+          >
         </div>
-        <div class="card m-2 p-2 bg-body-tertiary" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="./images/p2.png" class="img-fluid rounded" alt="..." />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h4 class="card-title">Barebones TextUtils</h4>
-                <p class="card-text">
-                  Clean UI for quick text manipulations - convert to uppercase,
-                  lowercase, remove extra spaces.
-                </p>
-                <p class="card-text">
-                  <span class="badge text-bg-secondary">React.js</span>
-                  <span class="badge text-bg-secondary">Bootstrap</span>
-                </p>
-                <a
-                  target="_blank"
-                  href="https://parthvyas7.github.io/barebones-textutils/"
-                  class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fs-5"
-                  >View</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card m-2 p-2 bg-body-tertiary" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="/images/p3.jpg" class="img-fluid rounded" alt="..." />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h4 class="card-title">Cloud Notes</h4>
-                <p class="card-text">
-                  Cloud Notes note-taking web app. Create, edit, delete, search
-                  notes, also includes a user authentication with clean UI for
-                  easy organization.
-                </p>
-                <p class="card-text">
-                  <span class="badge text-bg-secondary">Node.js</span>
-                  <span class="badge text-bg-secondary">Express.js</span>
-                  <span class="badge text-bg-secondary">React.js</span>
-                  <span class="badge text-bg-secondary">MongoDB</span>
-                </p>
-                <a
-                  target="_blank"
-                  href="https://github.com/parthvyas7/cnotes"
-                  class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fs-5"
-                  >View</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card m-2 p-2 bg-body-tertiary" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="./images/p4.jpg" class="img-fluid rounded" alt="..." />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h4 class="card-title">Newws</h4>
-                <p class="card-text">
-                  News aggregator to browse articles from various publishers and
-                  magazines, view articles by source or category, uses NewsAPI
-                  integration.
-                </p>
-                <p class="card-text">
-                  <span class="badge text-bg-secondary">React.js</span>
-                  <span class="badge text-bg-secondary">Axios</span>
-                </p>
-                <a
-                  target="_blank"
-                  href="https://github.com/parthvyas7/Newws"
-                  class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fs-5"
-                  >View</a
-                >
-              </div>
-            </div>
-          </div>
+        <div class="block bg-white p-4 mx-auto shadow rounded">
+          <img
+            alt="PeoplePal"
+            src="/images/PeoplePal.webp"
+            class="h-64 w-full object-contain sm:h-80 lg:h-96 max-w-md"
+            width="600"
+            height="800"
+            loading="lazy"
+          />
+          <h3 class="mt-2 text-lg font-bold text-gray-950 sm:text-xl">
+            PeoplePal
+          </h3>
+          <p class="my-2 max-w-sm text-gray-700">
+            Effortlessly manage your contacts with our intuitive web
+            application. Developed with React and React Router and utilises
+            client-side storage
+          </p>
+          <a
+            class="mr-4 text-gray-700 underline underline-offset-4 decoration-dotted hover:text-gray-950 hover:decoration-solid"
+            target="_blank"
+            href="https://contacts-bqd.pages.dev/"
+            >View</a
+          >
         </div>
       </div>
-      <div class="text-center">
+      <div class="text-xl py-4 md:text-2xl text-center text-gray-950">
+        <h3>Other Projects</h3>
+      </div>
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-4">
+        <div class="block bg-white p-4 mx-auto shadow rounded">
+          <img
+            alt="Writings.Dev"
+            src="/images/Writings dev.webp"
+            class="h-64 w-full object-contain sm:h-80 lg:h-96 max-w-md"
+            width="600"
+            height="800"
+            loading="lazy"
+          />
+          <h3 class="mt-2 text-lg font-bold text-gray-950 sm:text-xl">
+            Writings.Dev
+          </h3>
+          <p class="my-2 max-w-sm text-gray-700">Blog page for developers</p>
+          <a
+            class="text-gray-700 underline underline-offset-4 decoration-dotted hover:text-gray-950 hover:decoration-solid"
+            target="_blank"
+            href="http://writingsdev.rf.gd/"
+            >View</a
+          >
+        </div>
+        <div class="block bg-white p-4 mx-auto shadow rounded">
+          <img
+            alt="TextUtils"
+            src="/images/Text utils.webp"
+            class="h-64 w-full object-contain sm:h-80 lg:h-96 max-w-md"
+            width="600"
+            height="800"
+            loading="lazy"
+          />
+          <h3 class="mt-2 text-lg font-bold text-gray-950 sm:text-xl">
+            TextUtils
+          </h3>
+          <p class="my-2 max-w-sm text-gray-700">
+            Clean UI for quick text manipulations.
+          </p>
+          <a
+            class="text-gray-700 underline underline-offset-4 decoration-dotted hover:text-gray-950 hover:decoration-solid"
+            target="_blank"
+            href="https://parthvyas7.github.io/barebones-textutils/"
+            >View</a
+          >
+        </div>
+        <div class="block bg-white p-4 mx-auto shadow rounded">
+          <img
+            alt="Currency converter"
+            src="/images/Currency converter.webp"
+            class="h-64 w-full object-contain sm:h-80 lg:h-96 max-w-md"
+            width="600"
+            height="800"
+            loading="lazy"
+          />
+          <h3 class="mt-2 text-lg font-bold text-gray-950 sm:text-xl">
+            Currency converter
+          </h3>
+          <a
+            class="text-gray-700 underline underline-offset-4 decoration-dotted hover:text-gray-950 hover:decoration-solid"
+            target="_blank"
+            href="https://currency-converterr.surge.sh/"
+            >View</a
+          >
+        </div>
+        <div class="block bg-white p-4 mx-auto shadow rounded">
+          <img
+            alt=""
+            src="/images/Password generator.webp"
+            class="h-64 w-full object-contain sm:h-80 lg:h-96 max-w-md"
+            width="600"
+            height="800"
+            loading="lazy"
+          />
+          <h3 class="mt-2 text-lg font-bold text-gray-950 sm:text-xl">
+            Random Password Generator
+          </h3>
+          <a
+            class="text-gray-700 underline underline-offset-4 decoration-dotted hover:text-gray-950 hover:decoration-solid"
+            target="_blank"
+            href="https://password-generator-react.tiiny.site/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="text-xl py-4 md:text-2xl text-center text-gray-950">
         <a
-          class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fs-5"
+          class="text-gray-700 underline underline-offset-4 decoration-dotted hover:text-gray-950 hover:decoration-solid"
           target="_blank"
           href="https://github.com/parthvyas7?tab=repositories"
           >Show all</a
         >
       </div>
-    </div>
-    <div
-      class="container-fluid bg-body-tertiary d-flex justify-content-evenly align-items-center py-2"
+    </section>
+    <footer
+      id="connect"
+      class="flex flex-col items-center bottom-0 py-4 bg-white shadow"
     >
-      <div class="container">
-        <a
-          class="icon-link link-body-emphasis fs-4 m-2"
-          target="_blank"
-          href="https://www.linkedin.com/in/parthvyas7/"
-        >
-          <i class="bi bi-linkedin"></i>
+      <div class="flex flex-row justify-start">
+        <a target="_blank" href="https://www.linkedin.com/in/parthvyas7/">
+          <svg
+            class="text-gray-700 hover:text-gray-950"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1.5em"
+            fill="currentColor"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M 475.42857142857144 0 L 36.57142857142857 0 L 475.42857142857144 0 L 36.57142857142857 0 Q 20.571428571428573 0 10.285714285714286 10.285714285714286 Q 0 21.714285714285715 0 36.57142857142857 L 0 475.42857142857144 L 0 475.42857142857144 Q 0 490.2857142857143 10.285714285714286 501.7142857142857 Q 20.571428571428573 512 36.57142857142857 512 L 475.42857142857144 512 L 475.42857142857144 512 Q 491.42857142857144 512 501.7142857142857 501.7142857142857 Q 512 490.2857142857143 512 475.42857142857144 L 512 36.57142857142857 L 512 36.57142857142857 Q 512 21.714285714285715 501.7142857142857 10.285714285714286 Q 491.42857142857144 0 475.42857142857144 0 L 475.42857142857144 0 Z M 154.28571428571428 438.85714285714283 L 78.85714285714286 438.85714285714283 L 154.28571428571428 438.85714285714283 L 78.85714285714286 438.85714285714283 L 78.85714285714286 194.28571428571428 L 78.85714285714286 194.28571428571428 L 155.42857142857142 194.28571428571428 L 155.42857142857142 194.28571428571428 L 155.42857142857142 438.85714285714283 L 154.28571428571428 438.85714285714283 Z M 116.57142857142857 161.14285714285714 Q 98.28571428571429 161.14285714285714 85.71428571428571 148.57142857142858 L 85.71428571428571 148.57142857142858 L 85.71428571428571 148.57142857142858 Q 73.14285714285714 136 73.14285714285714 117.71428571428571 Q 73.14285714285714 98.28571428571429 85.71428571428571 85.71428571428571 Q 98.28571428571429 73.14285714285714 116.57142857142857 73.14285714285714 Q 136 73.14285714285714 147.42857142857142 85.71428571428571 Q 160 98.28571428571429 161.14285714285714 117.71428571428571 Q 160 136 147.42857142857142 148.57142857142858 Q 136 161.14285714285714 116.57142857142857 161.14285714285714 L 116.57142857142857 161.14285714285714 Z M 438.85714285714283 438.85714285714283 L 363.42857142857144 438.85714285714283 L 438.85714285714283 438.85714285714283 L 363.42857142857144 438.85714285714283 L 363.42857142857144 320 L 363.42857142857144 320 Q 364.57142857142856 297.14285714285717 357.7142857142857 276.57142857142856 Q 352 257.14285714285717 323.42857142857144 254.85714285714286 Q 294.85714285714283 256 285.7142857142857 274.2857142857143 Q 277.7142857142857 292.57142857142856 278.85714285714283 317.7142857142857 L 278.85714285714283 438.85714285714283 L 278.85714285714283 438.85714285714283 L 202.28571428571428 438.85714285714283 L 202.28571428571428 438.85714285714283 L 202.28571428571428 194.28571428571428 L 202.28571428571428 194.28571428571428 L 275.42857142857144 194.28571428571428 L 275.42857142857144 194.28571428571428 L 275.42857142857144 227.42857142857142 L 275.42857142857144 227.42857142857142 L 276.57142857142856 227.42857142857142 L 276.57142857142856 227.42857142857142 Q 283.42857142857144 212.57142857142858 301.7142857142857 201.14285714285714 Q 320 188.57142857142858 348.57142857142856 188.57142857142858 Q 404.57142857142856 189.71428571428572 422.85714285714283 221.71428571428572 Q 441.14285714285717 254.85714285714286 438.85714285714283 305.14285714285717 L 438.85714285714283 438.85714285714283 L 438.85714285714283 438.85714285714283 Z"
+            /></svg
+        ></a>
+        <a target="_blank" href="https://github.com/parthvyas7"
+          ><svg
+            class="text-gray-700 hover:text-gray-950"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1.5em"
+            fill="currentColor"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M 171.3548387096774 407.741935483871 Q 170.32258064516128 411.8709677419355 166.19354838709677 411.8709677419355 Q 160 411.8709677419355 160 407.741935483871 Q 161.03225806451613 404.64516129032256 165.16129032258064 404.64516129032256 Q 170.32258064516128 404.64516129032256 171.3548387096774 407.741935483871 L 171.3548387096774 407.741935483871 Z M 139.3548387096774 403.61290322580646 Q 138.32258064516128 406.7096774193548 143.48387096774192 408.7741935483871 Q 148.6451612903226 409.80645161290323 149.67741935483872 406.7096774193548 Q 150.70967741935485 402.5806451612903 145.5483870967742 401.5483870967742 Q 140.38709677419354 400.51612903225805 139.3548387096774 403.61290322580646 L 139.3548387096774 403.61290322580646 Z M 184.7741935483871 401.5483870967742 Q 179.61290322580646 402.5806451612903 179.61290322580646 406.7096774193548 Q 180.6451612903226 409.80645161290323 185.80645161290323 409.80645161290323 Q 190.96774193548387 407.741935483871 190.96774193548387 404.64516129032256 Q 189.93548387096774 401.5483870967742 184.7741935483871 401.5483870967742 L 184.7741935483871 401.5483870967742 Z M 252.90322580645162 6.193548387096774 Q 142.4516129032258 8.258064516129032 72.25806451612904 78.45161290322581 L 72.25806451612904 78.45161290322581 L 72.25806451612904 78.45161290322581 Q 2.064516129032258 148.6451612903226 0 258.06451612903226 Q 1.032258064516129 345.80645161290323 48.516129032258064 411.8709677419355 Q 96 477.93548387096774 175.48387096774192 504.7741935483871 Q 194.06451612903226 505.80645161290323 193.03225806451613 492.38709677419354 Q 193.03225806451613 488.258064516129 193.03225806451613 476.9032258064516 Q 193.03225806451613 453.16129032258067 193.03225806451613 429.4193548387097 Q 190.96774193548387 429.4193548387097 173.41935483870967 431.48387096774195 Q 154.83870967741936 432.51612903225805 134.19354838709677 427.35483870967744 Q 113.54838709677419 421.16129032258067 105.29032258064517 398.4516129032258 Q 105.29032258064517 396.38709677419354 97.03225806451613 381.93548387096774 Q 88.7741935483871 368.51612903225805 76.38709677419355 360.258064516129 Q 74.3225806451613 359.2258064516129 68.12903225806451 352 Q 60.903225806451616 345.80645161290323 78.45161290322581 344.7741935483871 Q 79.48387096774194 343.741935483871 92.90322580645162 348.9032258064516 Q 106.3225806451613 353.03225806451616 117.6774193548387 371.61290322580646 Q 136.25806451612902 399.48387096774195 157.93548387096774 399.48387096774195 Q 180.6451612903226 399.48387096774195 193.03225806451613 393.2903225806452 Q 197.16129032258064 368.51612903225805 209.5483870967742 358.19354838709677 Q 164.1290322580645 356.1290322580645 130.06451612903226 335.48387096774195 Q 96 315.8709677419355 93.93548387096774 243.61290322580646 Q 93.93548387096774 222.96774193548387 100.12903225806451 209.5483870967742 Q 105.29032258064517 196.1290322580645 117.6774193548387 183.74193548387098 Q 115.61290322580645 177.5483870967742 113.54838709677419 158.96774193548387 Q 111.48387096774194 140.38709677419354 120.7741935483871 113.54838709677419 Q 139.3548387096774 110.45161290322581 164.1290322580645 124.90322580645162 Q 189.93548387096774 138.32258064516128 192 141.41935483870967 Q 192 141.41935483870967 192 141.41935483870967 Q 222.96774193548387 132.1290322580645 257.03225806451616 132.1290322580645 Q 290.06451612903226 132.1290322580645 322.06451612903226 141.41935483870967 Q 322.06451612903226 140.38709677419354 335.48387096774195 132.1290322580645 Q 347.8709677419355 123.87096774193549 364.38709677419354 117.6774193548387 Q 380.9032258064516 110.45161290322581 393.2903225806452 113.54838709677419 Q 402.5806451612903 140.38709677419354 400.51612903225805 158.96774193548387 Q 398.4516129032258 177.5483870967742 395.35483870967744 183.74193548387098 Q 407.741935483871 196.1290322580645 414.96774193548384 209.5483870967742 Q 422.19354838709677 222.96774193548387 422.19354838709677 243.61290322580646 Q 421.16129032258067 293.16129032258067 404.64516129032256 316.9032258064516 Q 387.0967741935484 339.61290322580646 360.258064516129 347.8709677419355 Q 333.4193548387097 356.1290322580645 303.48387096774195 358.19354838709677 Q 320 369.5483870967742 321.03225806451616 405.6774193548387 Q 321.03225806451616 443.8709677419355 321.03225806451616 473.80645161290323 Q 321.03225806451616 487.2258064516129 321.03225806451616 492.38709677419354 Q 320 505.80645161290323 338.5806451612903 504.7741935483871 Q 417.03225806451616 477.93548387096774 464.51612903225805 411.8709677419355 Q 510.96774193548384 345.80645161290323 512 258.06451612903226 Q 510.96774193548384 185.80645161290323 476.9032258064516 129.03225806451613 Q 441.80645161290323 72.25806451612904 384 39.225806451612904 Q 325.16129032258067 7.225806451612903 252.90322580645162 6.193548387096774 L 252.90322580645162 6.193548387096774 Z M 100.12903225806451 362.3225806451613 Q 98.06451612903226 364.38709677419354 101.16129032258064 367.48387096774195 Q 104.25806451612904 370.5806451612903 106.3225806451613 368.51612903225805 Q 108.38709677419355 366.4516129032258 105.29032258064517 363.35483870967744 Q 103.2258064516129 360.258064516129 100.12903225806451 362.3225806451613 L 100.12903225806451 362.3225806451613 Z M 88.7741935483871 354.06451612903226 Q 88.7741935483871 356.1290322580645 91.87096774193549 358.19354838709677 Q 94.96774193548387 359.2258064516129 96 357.16129032258067 Q 97.03225806451613 355.0967741935484 93.93548387096774 353.03225806451616 Q 90.83870967741936 352 88.7741935483871 354.06451612903226 L 88.7741935483871 354.06451612903226 Z M 122.83870967741936 390.19354838709677 Q 120.7741935483871 393.2903225806452 123.87096774193549 397.4193548387097 Q 128 400.51612903225805 131.09677419354838 398.4516129032258 Q 132.1290322580645 395.35483870967744 129.03225806451613 391.2258064516129 Q 124.90322580645162 388.1290322580645 122.83870967741936 390.19354838709677 L 122.83870967741936 390.19354838709677 Z M 110.45161290322581 375.741935483871 Q 108.38709677419355 377.80645161290323 110.45161290322581 381.93548387096774 Q 113.54838709677419 385.03225806451616 116.64516129032258 384 Q 118.70967741935483 381.93548387096774 116.64516129032258 377.80645161290323 Q 113.54838709677419 373.6774193548387 110.45161290322581 375.741935483871 L 110.45161290322581 375.741935483871 Z"
+            />
+          </svg>
         </a>
-        <a
-          class="icon-link link-body-emphasis fs-4 m-2"
-          target="_blank"
-          href="https://github.com/parthvyas7"
-        >
-          <i class="bi bi-github"></i>
-        </a>
-        <a
-          class="icon-link link-body-emphasis fs-4 m-2"
-          target="_blank"
-          href="mailto:itspv7@gmail.com"
-        >
-          <i class="bi bi-envelope-at-fill"></i>
-        </a>
+        <a target="_blank" href="https://x.com/parthvyas7t">
+          <svg
+            class="text-gray-700 hover:text-gray-950"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1.5em"
+            fill="currentColor"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M 402.9217391304348 24.48695652173913 L 481.9478260869565 24.48695652173913 L 402.9217391304348 24.48695652173913 L 481.9478260869565 24.48695652173913 L 310.53913043478263 220.38260869565218 L 310.53913043478263 220.38260869565218 L 512 487.5130434782609 L 512 487.5130434782609 L 353.9478260869565 487.5130434782609 L 353.9478260869565 487.5130434782609 L 230.4 326.1217391304348 L 230.4 326.1217391304348 L 89.04347826086956 487.5130434782609 L 89.04347826086956 487.5130434782609 L 10.017391304347827 487.5130434782609 L 10.017391304347827 487.5130434782609 L 193.6695652173913 278.2608695652174 L 193.6695652173913 278.2608695652174 L 0 24.48695652173913 L 0 24.48695652173913 L 161.3913043478261 24.48695652173913 L 161.3913043478261 24.48695652173913 L 273.8086956521739 172.52173913043478 L 273.8086956521739 172.52173913043478 L 402.9217391304348 24.48695652173913 L 402.9217391304348 24.48695652173913 Z M 375.09565217391304 440.76521739130436 L 419.61739130434785 440.76521739130436 L 375.09565217391304 440.76521739130436 L 419.61739130434785 440.76521739130436 L 138.01739130434783 69.00869565217391 L 138.01739130434783 69.00869565217391 L 91.2695652173913 69.00869565217391 L 91.2695652173913 69.00869565217391 L 375.09565217391304 440.76521739130436 L 375.09565217391304 440.76521739130436 Z"
+            /></svg
+        ></a>
+        <a target="_blank" href="mailto:itspv7@gmail.com">
+          <svg
+            class="text-gray-700 hover:text-gray-950"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1.5em"
+            fill="currentColor"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M 64 80 Q 44 81 30 94 L 30 94 L 30 94 Q 17 108 16 128 L 16 156 L 16 156 L 221 321 L 221 321 Q 237 334 256 334 Q 275 334 291 321 L 496 156 L 496 156 L 496 128 L 496 128 Q 495 108 482 94 Q 468 81 448 80 L 64 80 L 64 80 Z M 16 177 L 16 384 L 16 177 L 16 384 Q 17 404 30 418 Q 44 431 64 432 L 448 432 L 448 432 Q 468 431 482 418 Q 495 404 496 384 L 496 177 L 496 177 L 301 334 L 301 334 Q 281 350 256 350 Q 231 350 211 334 L 16 177 L 16 177 Z M 0 128 Q 1 101 19 83 L 19 83 L 19 83 Q 37 65 64 64 L 448 64 L 448 64 Q 475 65 493 83 Q 511 101 512 128 L 512 384 L 512 384 Q 511 411 493 429 Q 475 447 448 448 L 64 448 L 64 448 Q 37 447 19 429 Q 1 411 0 384 L 0 128 L 0 128 Z"
+            /></svg
+        ></a>
       </div>
-      <p class="fw-lighter m-0">Destined to be Designed</p>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+      <p class="text-gray-700">Destined to be Designed</p>
+    </footer>
   </body>
 </html>
