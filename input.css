@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 3, 3, 4;
+    --color-on-primary: 255, 255, 255;
+    --color-secondary: 94, 94, 99;
+    --color-background: 253, 248, 248;
+    --color-on-background: 28, 27, 27;
+    --color-surface: 253, 248, 248;
+    --color-on-surface: 28, 27, 27;
+    --color-surface-variant: 229, 226, 225;
+    --color-surface-container: 241, 237, 236;
+    --color-surface-container-low: 247, 243, 242;
+    --color-surface-container-high: 235, 231, 231;
+    --color-outline: 119, 118, 123;
+  }
+
+  .dark {
+    --color-primary: 228, 226, 228;
+    --color-on-primary: 27, 27, 29;
+    --color-secondary: 164, 163, 168;
+    --color-background: 15, 14, 14;
+    --color-on-background: 229, 226, 225;
+    --color-surface: 20, 19, 19;
+    --color-on-surface: 229, 226, 225;
+    --color-surface-variant: 71, 70, 70;
+    --color-surface-container: 28, 27, 27;
+    --color-surface-container-low: 24, 23, 23;
+    --color-surface-container-high: 34, 33, 33;
+    --color-outline: 143, 142, 147;
+  }
+}
+
