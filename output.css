@@ -584,6 +584,21 @@ video {
   --color-outline: 143, 142, 147;
 }
 
+.animate-marquee > div,
+  .section-image-overlay {
+  position: relative;
+}
+
+.animate-marquee > div::after,
+  .section-image-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(var(--color-outline), 0.12);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1084,9 +1099,9 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.from-surface-container-low {
-  --tw-gradient-from: rgb(var(--color-surface-container-low)) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgba(var(--color-surface-container-low), 0) var(--tw-gradient-to-position);
+.from-surface {
+  --tw-gradient-from: rgb(var(--color-surface)) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(var(--color-surface), 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1451,9 +1466,9 @@ video {
   background-color: rgba(var(--color-surface-container), var(--tw-bg-opacity));
 }
 
-.dark\:from-surface-container:is(.dark *) {
-  --tw-gradient-from: rgb(var(--color-surface-container)) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgba(var(--color-surface-container), 0) var(--tw-gradient-to-position);
+.dark\:from-background:is(.dark *) {
+  --tw-gradient-from: rgb(var(--color-background)) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(var(--color-background), 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 

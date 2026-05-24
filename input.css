@@ -34,3 +34,32 @@
   }
 }
 
+@layer components {
+  .animate-marquee > div,
+  .section-image-overlay {
+    position: relative;
+  }
+
+  .animate-marquee > div::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(var(--color-outline), 0.12);
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  .section-image-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid transparent;
+    background: linear-gradient(to bottom, rgba(var(--color-outline), 0.16), rgba(var(--color-outline), 0.02)) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+}
+

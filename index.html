@@ -443,21 +443,20 @@
           >
         </div>
         <!-- Section Intro Image -->
-        <div class="mb-6 rounded-xl border border-outline/10 aspect-[21/9] w-full">
+        <div class="relative mb-6 rounded-xl aspect-[800/875] w-full overflow-hidden">
           <img
             alt="My Life in Months"
-            class="w-full h-full object-cover transition-all duration-700 cursor-pointer"
-            onclick="openLightbox(this)"
+            class="w-full h-full object-cover"
             src="images/my-life-in-months.webp"
           />
           <div class="hidden">My Life in Months</div>
         </div>
 
         <!-- Fixed-height horizontal marquee strip -->
-        <div class="relative w-full overflow-hidden rounded-xl bg-surface-container-low dark:bg-surface-container h-[250px] md:h-[350px] flex items-center mb-12">
+        <div class="relative w-full overflow-hidden h-[250px] md:h-[350px] flex items-center mb-12">
           <!-- Fade overlays -->
-          <div class="pointer-events-none absolute inset-y-0 left-0 w-12 md:w-24 bg-gradient-to-r from-surface-container-low dark:from-surface-container to-transparent z-10"></div>
-          <div class="pointer-events-none absolute inset-y-0 right-0 w-12 md:w-24 bg-gradient-to-l from-surface-container-low dark:from-surface-container to-transparent z-10"></div>
+          <div class="pointer-events-none absolute inset-y-0 left-0 w-12 md:w-24 bg-gradient-to-r from-surface dark:from-background to-transparent z-10"></div>
+          <div class="pointer-events-none absolute inset-y-0 right-0 w-12 md:w-24 bg-gradient-to-l from-surface dark:from-background to-transparent z-10"></div>
 
           <div class="animate-marquee gap-4 flex flex-nowrap py-2 min-w-max">
             <!-- First set of items -->
@@ -557,6 +556,30 @@
                 First Job offer
               </div>
             </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[980/658] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/freeCodeCamp Responsive web design certification.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="freeCodeCamp Responsive Web Design Certification" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                freeCodeCamp Responsive Web Design Certification
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2224/3138] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Internship 1.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Internship 1" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Internship 1
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2204/3109] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Internship 2.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Internship 2" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Internship 2
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3160/2289] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Internship 3.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Internship 3" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Internship 3
+              </div>
+            </div>
             <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
               <img src="images/JEE Advanced Qualified.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="JEE Advanced Qualified" />
               <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
@@ -575,40 +598,58 @@
                 Mindshift MOOC
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1145/606] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 4.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer letter 4" />
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1755/1240] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Odoo 19 Certification.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Odoo 19 Certification" />
               <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
-                Offer letter 4
-              </div>
-            </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[650/413] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 5.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer letter 5" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
-                Offer letter 5
+                Odoo 19 Certification
               </div>
             </div>
             <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2550/3300] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer Letter 1.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 1" />
+              <img src="images/Offer letter 1.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 1" />
               <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
                 Offer Letter 1
               </div>
             </div>
             <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2550/3300] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer Letter 2.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 2" />
+              <img src="images/Offer letter 2.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 2" />
               <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
                 Offer Letter 2
               </div>
             </div>
             <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2481/3508] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 3.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer letter 3" />
+              <img src="images/Offer letter 3.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 3" />
               <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
-                Offer letter 3
+                Offer Letter 3
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1145/606] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Offer letter 4.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 4" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Offer Letter 4
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[650/413] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Offer letter 5.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 5" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Offer Letter 5
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1240/1754] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Offer letter 6.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 6" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Offer Letter 6
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2479/3509] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Offer letter 7.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 7" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Offer Letter 7
               </div>
             </div>
             <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2484/3509] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer Letter 4.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 4" />
+              <img src="images/Offer letter 8.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 8" />
               <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
-                Offer Letter 4
+                Offer Letter 8
               </div>
             </div>
             <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2364/3263] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
@@ -721,6 +762,30 @@
                 First Job offer
               </div>
             </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[980/658] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/freeCodeCamp Responsive web design certification.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="freeCodeCamp Responsive Web Design Certification" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                freeCodeCamp Responsive Web Design Certification
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2224/3138] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Internship 1.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Internship 1" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Internship 1
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2204/3109] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Internship 2.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Internship 2" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Internship 2
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3160/2289] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Internship 3.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Internship 3" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Internship 3
+              </div>
+            </div>
             <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
               <img src="images/JEE Advanced Qualified.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="JEE Advanced Qualified" />
               <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
@@ -739,40 +804,58 @@
                 Mindshift MOOC
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1145/606] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 4.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer letter 4" />
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1755/1240] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Odoo 19 Certification.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Odoo 19 Certification" />
               <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
-                Offer letter 4
-              </div>
-            </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[650/413] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 5.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer letter 5" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
-                Offer letter 5
+                Odoo 19 Certification
               </div>
             </div>
             <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2550/3300] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer Letter 1.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 1" />
+              <img src="images/Offer letter 1.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 1" />
               <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
                 Offer Letter 1
               </div>
             </div>
             <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2550/3300] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer Letter 2.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 2" />
+              <img src="images/Offer letter 2.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 2" />
               <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
                 Offer Letter 2
               </div>
             </div>
             <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2481/3508] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 3.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer letter 3" />
+              <img src="images/Offer letter 3.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 3" />
               <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
-                Offer letter 3
+                Offer Letter 3
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1145/606] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Offer letter 4.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 4" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Offer Letter 4
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[650/413] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Offer letter 5.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 5" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Offer Letter 5
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1240/1754] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Offer letter 6.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 6" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Offer Letter 6
+              </div>
+            </div>
+            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2479/3509] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+              <img src="images/Offer letter 7.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 7" />
+              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+                Offer Letter 7
               </div>
             </div>
             <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2484/3509] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer Letter 4.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 4" />
+              <img src="images/Offer letter 8.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 8" />
               <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
-                Offer Letter 4
+                Offer Letter 8
               </div>
             </div>
             <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2364/3263] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
