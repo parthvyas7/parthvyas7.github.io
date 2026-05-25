@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -42,16 +42,34 @@
     </style>
     <!-- Theme Detection and FOUC Prevention -->
     <script>
-      (function() {
-        const theme = localStorage.getItem('theme') || 'system';
-        if (theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.classList.add('dark');
+      (function () {
+        const theme = localStorage.getItem("theme") || "system";
+        if (
+          theme === "dark" ||
+          (theme === "system" &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
         } else {
-          document.documentElement.classList.remove('dark');
+          document.documentElement.classList.remove("dark");
         }
       })();
     </script>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-T4W85C6YQM"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-T4W85C6YQM");
+  </script>
   <body
     class="bg-surface text-on-surface dark:bg-background dark:text-on-background font-sans selection:bg-primary selection:text-on-primary antialiased transition-colors duration-300"
   >
@@ -89,7 +107,9 @@
 
     <main class="max-w-[680px] mx-auto px-6 md:px-0">
       <!-- Hero Section -->
-      <section class="pt-12 md:pt-20 pb-12 md:pb-section-gap flex flex-col gap-6">
+      <section
+        class="pt-12 md:pt-20 pb-12 md:pb-section-gap flex flex-col gap-6"
+      >
         <h1 class="text-display-mobile md:text-display text-on-surface">
           Hi, I'm Parth Vyas
         </h1>
@@ -133,7 +153,9 @@
         <div
           class="group flex flex-col gap-4 p-0 hover:bg-surface-container-low transition-colors duration-300 -mx-4 px-4 py-6 rounded-xl"
         >
-          <div class="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2 sm:gap-0">
+          <div
+            class="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2 sm:gap-0"
+          >
             <h3 class="text-headline-md text-on-surface">StoryStream</h3>
             <div class="flex gap-4">
               <a
@@ -161,10 +183,10 @@
         <div
           class="group flex flex-col gap-4 p-0 hover:bg-surface-container-low transition-colors duration-300 -mx-4 px-4 py-6 rounded-xl"
         >
-          <div class="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2 sm:gap-0">
-            <h3 class="text-headline-md text-on-surface">
-              Bazario
-            </h3>
+          <div
+            class="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2 sm:gap-0"
+          >
+            <h3 class="text-headline-md text-on-surface">Bazario</h3>
             <div class="flex gap-4">
               <a
                 class="text-meta text-secondary hover:text-primary underline underline-offset-4 transition-colors"
@@ -181,7 +203,9 @@
             </div>
           </div>
           <p class="text-body-md text-secondary">
-            React-based e-commerce platform powered by Supabase. It features an elegant UI, real-time analytics, role-based workflows for buyers and sellers.
+            React-based e-commerce platform powered by Supabase. It features an
+            elegant UI, real-time analytics, role-based workflows for buyers and
+            sellers.
           </p>
         </div>
 
@@ -189,7 +213,9 @@
         <div
           class="group flex flex-col gap-4 p-0 hover:bg-surface-container-low transition-colors duration-300 -mx-4 px-4 py-6 rounded-xl"
         >
-          <div class="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2 sm:gap-0">
+          <div
+            class="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2 sm:gap-0"
+          >
             <h3 class="text-headline-md text-on-surface">TubeNode</h3>
             <div class="flex gap-4">
               <a
@@ -425,8 +451,8 @@
               </div>
             </div>
             <p class="text-meta text-secondary mt-1">
-              React-based weather dashboard fetching data from OpenWeatherMap API
-              for various cities.
+              React-based weather dashboard fetching data from OpenWeatherMap
+              API for various cities.
             </p>
           </div>
         </div>
@@ -443,7 +469,9 @@
           >
         </div>
         <!-- Section Intro Image -->
-        <div class="relative mb-6 rounded-xl aspect-[800/875] w-full overflow-hidden">
+        <div
+          class="relative mb-6 rounded-xl aspect-[800/875] w-full overflow-hidden"
+        >
           <img
             alt="My Life in Months"
             class="w-full h-full object-cover"
@@ -453,420 +481,1038 @@
         </div>
 
         <!-- Fixed-height horizontal marquee strip -->
-        <div class="relative w-full overflow-hidden h-[250px] md:h-[350px] flex items-center mb-12">
+        <div
+          class="relative w-full overflow-hidden h-[250px] md:h-[350px] flex items-center mb-12"
+        >
           <!-- Fade overlays -->
-          <div class="pointer-events-none absolute inset-y-0 left-0 w-12 md:w-24 bg-gradient-to-r from-surface dark:from-background to-transparent z-10"></div>
-          <div class="pointer-events-none absolute inset-y-0 right-0 w-12 md:w-24 bg-gradient-to-l from-surface dark:from-background to-transparent z-10"></div>
+          <div
+            class="pointer-events-none absolute inset-y-0 left-0 w-12 md:w-24 bg-gradient-to-r from-surface dark:from-background to-transparent z-10"
+          ></div>
+          <div
+            class="pointer-events-none absolute inset-y-0 right-0 w-12 md:w-24 bg-gradient-to-l from-surface dark:from-background to-transparent z-10"
+          ></div>
 
           <div class="animate-marquee gap-4 flex flex-nowrap py-2 min-w-max">
             <!-- First set of items -->
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1184/527] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/AFCAT 2 2022 Result.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="AFCAT 2 2022 Result" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1184/527] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/AFCAT 2 2022 Result.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="AFCAT 2 2022 Result"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 AFCAT 2 2022 Result
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1254/379] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/BDA role.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="BDA role" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1254/379] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/BDA role.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="BDA role"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 BDA role
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[916/582] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/CDAC Design Engineer.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="CDAC Design Engineer" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[916/582] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/CDAC Design Engineer.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="CDAC Design Engineer"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 CDAC Design Engineer
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[887/632] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/CDSE 1 2022 Marksheet.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="CDSE 1 2022 Marksheet" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[887/632] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/CDSE 1 2022 Marksheet.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="CDSE 1 2022 Marksheet"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 CDSE 1 2022 Marksheet
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[887/591] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/CDSE 2 2022 Marksheet.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="CDSE 2 2022 Marksheet" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[887/591] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/CDSE 2 2022 Marksheet.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="CDSE 2 2022 Marksheet"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 CDSE 2 2022 Marksheet
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[647/502] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/CDSE 2 2022 Result.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="CDSE 2 2022 Result" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[647/502] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/CDSE 2 2022 Result.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="CDSE 2 2022 Result"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 CDSE 2 2022 Result
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1056/328] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/CGCAT 02-2024.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="CGCAT 02-2024" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1056/328] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/CGCAT 02-2024.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="CGCAT 02-2024"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 CGCAT 02-2024
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[4296/3439] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Charter member certificate.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Charter Member Certificate" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[4296/3439] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Charter member certificate.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Charter Member Certificate"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Charter Member Certificate
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Community prize for Academics 1.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Community prize for Academics 1" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Community prize for Academics 1.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Community prize for Academics 1"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Community prize for Academics 1
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Community prize for Academics 2.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Community prize for Academics 2" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Community prize for Academics 2.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Community prize for Academics 2"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Community prize for Academics 2
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[847/557] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Failed in B.Tech. Sem 6 EBM.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Failed in B.Tech. Sem 6 EBM" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[847/557] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Failed in B.Tech. Sem 6 EBM.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Failed in B.Tech. Sem 6 EBM"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Failed in B.Tech. Sem 6 EBM
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1235/655] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Failure - CDSE 1 2021.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Failure - CDSE 1 2021" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1235/655] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Failure - CDSE 1 2021.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Failure - CDSE 1 2021"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Failure - CDSE 1 2021
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1071/601] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Failure - CGCAT 01-24 Result.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Failure - CGCAT 01-24 Result" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1071/601] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Failure - CGCAT 01-24 Result.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Failure - CGCAT 01-24 Result"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Failure - CGCAT 01-24 Result
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[575/372] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Failure - Codechef Summer Internship 2020.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Failure - Codechef Summer Internship 2020" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[575/372] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Failure - Codechef Summer Internship 2020.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Failure - Codechef Summer Internship 2020"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Failure - Codechef Summer Internship 2020
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1080/2280] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Failure - Unemployment hits hard.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Failure - Unemployment Hits Hard" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1080/2280] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Failure - Unemployment hits hard.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Failure - Unemployment Hits Hard"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Failure - Unemployment Hits Hard
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[733/571] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/First Job offer.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="First Job offer" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[733/571] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/First Job offer.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="First Job offer"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 First Job offer
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[980/658] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/freeCodeCamp Responsive web design certification.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="freeCodeCamp Responsive Web Design Certification" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[980/658] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/freeCodeCamp Responsive web design certification.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="freeCodeCamp Responsive Web Design Certification"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 freeCodeCamp Responsive Web Design Certification
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2224/3138] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Internship 1.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Internship 1" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2224/3138] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Internship 1.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Internship 1"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Internship 1
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2204/3109] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Internship 2.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Internship 2" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2204/3109] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Internship 2.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Internship 2"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Internship 2
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3160/2289] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Internship 3.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Internship 3" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3160/2289] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Internship 3.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Internship 3"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Internship 3
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/JEE Advanced Qualified.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="JEE Advanced Qualified" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/JEE Advanced Qualified.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="JEE Advanced Qualified"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 JEE Advanced Qualified
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3300/2550] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Learning How to Learn MOOC.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Learning How to Learn MOOC" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3300/2550] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Learning How to Learn MOOC.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Learning How to Learn MOOC"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Learning How to Learn MOOC
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3300/2550] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Mindshift MOOC.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Mindshift MOOC" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3300/2550] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Mindshift MOOC.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Mindshift MOOC"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Mindshift MOOC
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1755/1240] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Odoo 19 Certification.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Odoo 19 Certification" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1755/1240] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Odoo 19 Certification.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Odoo 19 Certification"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Odoo 19 Certification
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2550/3300] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 1.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 1" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2550/3300] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 1.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 1"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 1
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2550/3300] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 2.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 2" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2550/3300] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 2.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 2"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 2
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2481/3508] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 3.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 3" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2481/3508] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 3.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 3"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 3
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1145/606] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 4.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 4" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1145/606] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 4.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 4"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 4
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[650/413] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 5.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 5" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[650/413] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 5.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 5"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 5
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1240/1754] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 6.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 6" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1240/1754] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 6.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 6"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 6
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2479/3509] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 7.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 7" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2479/3509] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 7.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 7"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 7
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2484/3509] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 8.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 8" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2484/3509] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 8.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 8"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 8
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2364/3263] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Sanskrit competition.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Sanskrit Competition" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2364/3263] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Sanskrit competition.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Sanskrit Competition"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Sanskrit Competition
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[865/634] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/UPSC CDSE 2 2021 Marksheet.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="UPSC CDSE 2 2021 Marksheet" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[865/634] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/UPSC CDSE 2 2021 Marksheet.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="UPSC CDSE 2 2021 Marksheet"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 UPSC CDSE 2 2021 Marksheet
               </div>
             </div>
 
             <!-- Second set of items for seamless loop -->
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1184/527] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/AFCAT 2 2022 Result.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="AFCAT 2 2022 Result" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1184/527] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/AFCAT 2 2022 Result.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="AFCAT 2 2022 Result"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 AFCAT 2 2022 Result
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1254/379] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/BDA role.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="BDA role" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1254/379] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/BDA role.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="BDA role"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 BDA role
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[916/582] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/CDAC Design Engineer.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="CDAC Design Engineer" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[916/582] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/CDAC Design Engineer.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="CDAC Design Engineer"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 CDAC Design Engineer
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[887/632] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/CDSE 1 2022 Marksheet.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="CDSE 1 2022 Marksheet" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[887/632] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/CDSE 1 2022 Marksheet.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="CDSE 1 2022 Marksheet"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 CDSE 1 2022 Marksheet
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[887/591] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/CDSE 2 2022 Marksheet.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="CDSE 2 2022 Marksheet" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[887/591] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/CDSE 2 2022 Marksheet.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="CDSE 2 2022 Marksheet"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 CDSE 2 2022 Marksheet
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[647/502] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/CDSE 2 2022 Result.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="CDSE 2 2022 Result" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[647/502] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/CDSE 2 2022 Result.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="CDSE 2 2022 Result"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 CDSE 2 2022 Result
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1056/328] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/CGCAT 02-2024.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="CGCAT 02-2024" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1056/328] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/CGCAT 02-2024.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="CGCAT 02-2024"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 CGCAT 02-2024
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[4296/3439] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Charter member certificate.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Charter Member Certificate" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[4296/3439] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Charter member certificate.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Charter Member Certificate"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Charter Member Certificate
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Community prize for Academics 1.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Community prize for Academics 1" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Community prize for Academics 1.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Community prize for Academics 1"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Community prize for Academics 1
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Community prize for Academics 2.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Community prize for Academics 2" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Community prize for Academics 2.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Community prize for Academics 2"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Community prize for Academics 2
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[847/557] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Failed in B.Tech. Sem 6 EBM.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Failed in B.Tech. Sem 6 EBM" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[847/557] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Failed in B.Tech. Sem 6 EBM.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Failed in B.Tech. Sem 6 EBM"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Failed in B.Tech. Sem 6 EBM
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1235/655] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Failure - CDSE 1 2021.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Failure - CDSE 1 2021" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1235/655] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Failure - CDSE 1 2021.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Failure - CDSE 1 2021"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Failure - CDSE 1 2021
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1071/601] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Failure - CGCAT 01-24 Result.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Failure - CGCAT 01-24 Result" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1071/601] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Failure - CGCAT 01-24 Result.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Failure - CGCAT 01-24 Result"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Failure - CGCAT 01-24 Result
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[575/372] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Failure - Codechef Summer Internship 2020.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Failure - Codechef Summer Internship 2020" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[575/372] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Failure - Codechef Summer Internship 2020.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Failure - Codechef Summer Internship 2020"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Failure - Codechef Summer Internship 2020
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1080/2280] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Failure - Unemployment hits hard.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Failure - Unemployment Hits Hard" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1080/2280] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Failure - Unemployment hits hard.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Failure - Unemployment Hits Hard"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Failure - Unemployment Hits Hard
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[733/571] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/First Job offer.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="First Job offer" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[733/571] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/First Job offer.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="First Job offer"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 First Job offer
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[980/658] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/freeCodeCamp Responsive web design certification.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="freeCodeCamp Responsive Web Design Certification" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[980/658] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/freeCodeCamp Responsive web design certification.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="freeCodeCamp Responsive Web Design Certification"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 freeCodeCamp Responsive Web Design Certification
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2224/3138] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Internship 1.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Internship 1" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2224/3138] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Internship 1.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Internship 1"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Internship 1
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2204/3109] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Internship 2.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Internship 2" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2204/3109] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Internship 2.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Internship 2"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Internship 2
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3160/2289] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Internship 3.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Internship 3" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3160/2289] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Internship 3.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Internship 3"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Internship 3
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/JEE Advanced Qualified.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="JEE Advanced Qualified" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[433/577] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/JEE Advanced Qualified.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="JEE Advanced Qualified"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 JEE Advanced Qualified
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3300/2550] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Learning How to Learn MOOC.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Learning How to Learn MOOC" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3300/2550] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Learning How to Learn MOOC.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Learning How to Learn MOOC"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Learning How to Learn MOOC
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3300/2550] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Mindshift MOOC.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Mindshift MOOC" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[3300/2550] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Mindshift MOOC.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Mindshift MOOC"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Mindshift MOOC
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1755/1240] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Odoo 19 Certification.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Odoo 19 Certification" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1755/1240] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Odoo 19 Certification.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Odoo 19 Certification"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Odoo 19 Certification
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2550/3300] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 1.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 1" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2550/3300] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 1.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 1"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 1
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2550/3300] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 2.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 2" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2550/3300] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 2.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 2"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 2
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2481/3508] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 3.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 3" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2481/3508] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 3.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 3"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 3
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1145/606] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 4.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 4" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1145/606] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 4.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 4"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 4
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[650/413] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 5.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 5" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[650/413] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 5.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 5"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 5
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1240/1754] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 6.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 6" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1240/1754] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 6.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 6"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 6
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2479/3509] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 7.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 7" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2479/3509] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 7.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 7"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 7
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2484/3509] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Offer letter 8.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Offer Letter 8" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2484/3509] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Offer letter 8.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Offer Letter 8"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Offer Letter 8
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2364/3263] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/Sanskrit competition.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="Sanskrit Competition" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[2364/3263] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/Sanskrit competition.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="Sanskrit Competition"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 Sanskrit Competition
               </div>
             </div>
-            <div class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[865/634] rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
-              <img src="images/UPSC CDSE 2 2021 Marksheet.webp" class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105" alt="UPSC CDSE 2 2021 Marksheet" />
-              <div class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10">
+            <div
+              class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[865/634] rounded-lg overflow-hidden cursor-pointer group"
+              onclick="openLightbox(this)"
+            >
+              <img
+                src="images/UPSC CDSE 2 2021 Marksheet.webp"
+                class="h-full w-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                alt="UPSC CDSE 2 2021 Marksheet"
+              />
+              <div
+                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+              >
                 UPSC CDSE 2 2021 Marksheet
               </div>
             </div>
@@ -884,20 +1530,30 @@
         class="flex flex-col md:flex-row justify-between items-center max-w-[680px] mx-auto px-6 md:px-0 gap-8"
       >
         <div class="flex flex-col items-center md:items-start gap-2">
-          <p class="text-meta text-secondary">
-            Destined to be designed.
-          </p>
+          <p class="text-meta text-secondary">Destined to be designed.</p>
         </div>
 
         <!-- Theme Switcher Capsule -->
-        <div class="flex items-center gap-1 bg-surface-container dark:bg-surface-container border border-outline/10 p-1 rounded-full">
+        <div
+          class="flex items-center gap-1 bg-surface-container dark:bg-surface-container border border-outline/10 p-1 rounded-full"
+        >
           <button
             id="theme-light"
             class="theme-btn flex items-center gap-1.5 px-3 py-1.5 rounded-full text-meta text-secondary hover:text-primary transition-all duration-200"
             title="Light mode"
           >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
             </svg>
             <span class="sr-only sm:not-sr-only">Light</span>
           </button>
@@ -906,8 +1562,18 @@
             class="theme-btn flex items-center gap-1.5 px-3 py-1.5 rounded-full text-meta text-secondary hover:text-primary transition-all duration-200"
             title="Dark mode"
           >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              />
             </svg>
             <span class="sr-only sm:not-sr-only">Dark</span>
           </button>
@@ -916,8 +1582,18 @@
             class="theme-btn flex items-center gap-1.5 px-3 py-1.5 rounded-full text-meta text-secondary hover:text-primary transition-all duration-200"
             title="System preference"
           >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
             </svg>
             <span class="sr-only sm:not-sr-only">System</span>
           </button>
@@ -947,14 +1623,38 @@
     </footer>
 
     <!-- Lightbox Popout Modal -->
-    <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 cursor-zoom-out" onclick="closeLightbox()">
-      <button class="absolute top-6 right-6 text-white/80 hover:text-white transition-colors" onclick="closeLightbox()">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    <div
+      id="lightbox"
+      class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 cursor-zoom-out"
+      onclick="closeLightbox()"
+    >
+      <button
+        class="absolute top-6 right-6 text-white/80 hover:text-white transition-colors"
+        onclick="closeLightbox()"
+      >
+        <svg
+          class="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
         </svg>
       </button>
-      <div class="max-w-[90%] max-h-[85vh] relative flex flex-col items-center gap-4">
-        <img id="lightbox-img" class="max-w-full max-h-full rounded-lg shadow-2xl object-contain transition-transform duration-300 scale-95" src="" alt="Zoomed view" />
+      <div
+        class="max-w-[90%] max-h-[85vh] relative flex flex-col items-center gap-4"
+      >
+        <img
+          id="lightbox-img"
+          class="max-w-full max-h-full rounded-lg shadow-2xl object-contain transition-transform duration-300 scale-95"
+          src=""
+          alt="Zoomed view"
+        />
         <p id="lightbox-caption" class="text-white/80 text-sm text-center"></p>
       </div>
     </div>
@@ -962,8 +1662,8 @@
     <!-- Interactive Atmospheric Effect & Theme Selection (Vanilla JS) -->
     <script>
       // Sync marquee animation using epoch time so it runs independently of scrolls/reloads
-      (function() {
-        const marquee = document.querySelector('.animate-marquee');
+      (function () {
+        const marquee = document.querySelector(".animate-marquee");
         if (marquee) {
           const duration = 50; // match Tailwind config animation duration
           const offset = (Date.now() / 1000) % duration;
@@ -979,108 +1679,129 @@
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('opacity-100', 'translate-y-0');
-            entry.target.classList.remove('opacity-0', 'translate-y-4');
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            entry.target.classList.remove("opacity-0", "translate-y-4");
           }
         });
       }, observerOptions);
 
-      document.querySelectorAll('section:not(#log)').forEach((section) => {
+      document.querySelectorAll("section:not(#log)").forEach((section) => {
         section.classList.add(
-          'transition-all',
-          'duration-700',
-          'opacity-0',
-          'translate-y-4'
+          "transition-all",
+          "duration-700",
+          "opacity-0",
+          "translate-y-4",
         );
         observer.observe(section);
       });
 
       // Theme Selection Script logic
-      (function() {
+      (function () {
         const themeButtons = {
-          light: document.getElementById('theme-light'),
-          dark: document.getElementById('theme-dark'),
-          system: document.getElementById('theme-system')
+          light: document.getElementById("theme-light"),
+          dark: document.getElementById("theme-dark"),
+          system: document.getElementById("theme-system"),
         };
 
         function updateThemeUI(activeTheme) {
-          Object.keys(themeButtons).forEach(key => {
+          Object.keys(themeButtons).forEach((key) => {
             const btn = themeButtons[key];
             if (!btn) return;
             if (key === activeTheme) {
-              btn.classList.add('bg-surface', 'dark:bg-background', 'text-primary', 'shadow-sm', 'border', 'border-outline/5', 'font-semibold');
-              btn.classList.remove('text-secondary');
+              btn.classList.add(
+                "bg-surface",
+                "dark:bg-background",
+                "text-primary",
+                "shadow-sm",
+                "border",
+                "border-outline/5",
+                "font-semibold",
+              );
+              btn.classList.remove("text-secondary");
             } else {
-              btn.classList.remove('bg-surface', 'dark:bg-background', 'text-primary', 'shadow-sm', 'border', 'border-outline/5', 'font-semibold');
-              btn.classList.add('text-secondary');
+              btn.classList.remove(
+                "bg-surface",
+                "dark:bg-background",
+                "text-primary",
+                "shadow-sm",
+                "border",
+                "border-outline/5",
+                "font-semibold",
+              );
+              btn.classList.add("text-secondary");
             }
           });
         }
 
         function applyTheme(theme) {
-          const isDark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          const isDark =
+            theme === "dark" ||
+            (theme === "system" &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
           if (isDark) {
-            document.documentElement.classList.add('dark');
+            document.documentElement.classList.add("dark");
           } else {
-            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.remove("dark");
           }
           updateThemeUI(theme);
         }
 
         // Initialize theme UI
-        const savedTheme = localStorage.getItem('theme') || 'system';
+        const savedTheme = localStorage.getItem("theme") || "system";
         applyTheme(savedTheme);
 
         // Click listeners
-        Object.keys(themeButtons).forEach(theme => {
+        Object.keys(themeButtons).forEach((theme) => {
           const btn = themeButtons[theme];
           if (btn) {
-            btn.addEventListener('click', () => {
-              localStorage.setItem('theme', theme);
+            btn.addEventListener("click", () => {
+              localStorage.setItem("theme", theme);
               applyTheme(theme);
             });
           }
         });
 
         // Listen for system preference changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-          if (localStorage.getItem('theme') === 'system') {
-            applyTheme('system');
-          }
-        });
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", () => {
+            if (localStorage.getItem("theme") === "system") {
+              applyTheme("system");
+            }
+          });
       })();
 
       // Lightbox popout functions
       function openLightbox(element) {
-        const img = element.querySelector('img');
-        const textEl = element.querySelector('div, span');
+        const img = element.querySelector("img");
+        const textEl = element.querySelector("div, span");
         const captionText = textEl ? textEl.innerText.trim() : img.alt;
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const lightboxCaption = document.getElementById("lightbox-caption");
 
         lightboxImg.src = img.src;
         lightboxCaption.innerText = captionText;
 
-        lightbox.classList.remove('opacity-0', 'pointer-events-none');
+        lightbox.classList.remove("opacity-0", "pointer-events-none");
         setTimeout(() => {
-          lightboxImg.classList.remove('scale-95');
-          lightboxImg.classList.add('scale-100');
+          lightboxImg.classList.remove("scale-95");
+          lightboxImg.classList.add("scale-100");
         }, 10);
       }
 
       // Close lightbox function
       function closeLightbox() {
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
 
-        lightboxImg.classList.remove('scale-100');
-        lightboxImg.classList.add('scale-95');
-        lightbox.classList.add('opacity-0', 'pointer-events-none');
+        lightboxImg.classList.remove("scale-100");
+        lightboxImg.classList.add("scale-95");
+        lightbox.classList.add("opacity-0", "pointer-events-none");
       }
 
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
           closeLightbox();
         }
       });
