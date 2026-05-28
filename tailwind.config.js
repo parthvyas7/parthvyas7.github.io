@@ -25,7 +25,8 @@ export default {
         "surface-container": withOpacity("--color-surface-container"),
         "surface-container-low": withOpacity("--color-surface-container-low"),
         "surface-container-high": withOpacity("--color-surface-container-high"),
-        "outline": withOpacity("--color-outline")
+        "outline": withOpacity("--color-outline"),
+        "accent": withOpacity("--color-accent")
       },
       borderRadius: {
         "DEFAULT": "0.25rem",
@@ -41,7 +42,8 @@ export default {
         "container-max-width": "680px"
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"]
+        sans: ["Inter", "sans-serif"],
+        mono: ["'JetBrains Mono'", "monospace"]
       },
       fontSize: {
         "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
@@ -55,7 +57,7 @@ export default {
         "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}]
       },
       animation: {
-        'marquee': 'marquee 50s linear infinite',
+        'marquee': 'marquee 50s linear 3s infinite',
       },
       keyframes: {
         marquee: {

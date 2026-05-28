@@ -11,23 +11,16 @@
     />
     <link
       rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
+      type="image/svg+xml"
+      href="favicon/favicon.svg"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    <script>if(location.protocol!=='file:'){var l=document.createElement('link');l.rel='manifest';l.href='favicon/site.webmanifest';document.head.appendChild(l);}</script>
     <title>Parth Vyas | Portfolio</title>
     <link href="output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -74,77 +67,52 @@
     class="bg-surface text-on-surface dark:bg-background dark:text-on-background font-sans selection:bg-primary selection:text-on-primary antialiased transition-colors duration-300"
   >
     <!-- TopAppBar -->
-    <header
-      class="sticky top-0 w-full bg-surface/80 dark:bg-background/80 backdrop-blur-md z-50 transition-all duration-200 ease-in-out border-b border-outline/5"
-    >
-      <nav
-        class="flex justify-between items-center max-w-[680px] mx-auto px-6 md:px-0 h-20"
-      >
-        <a
-          class="text-headline-md font-semibold text-on-surface tracking-tight"
-          href="#"
-          >PV</a
-        >
-        <div class="flex gap-4 sm:gap-8 items-center">
-          <a
-            class="text-body-md text-secondary hover:text-primary transition-colors"
-            href="#work"
-            >Work</a
-          >
-          <a
-            class="text-body-md text-secondary hover:text-primary transition-colors"
-            href="#log"
-            >Log</a
-          >
-          <a
-            class="text-body-md text-secondary hover:text-primary transition-colors"
-            href="#connect"
-            >Connect</a
-          >
-        </div>
-      </nav>
-    </header>
-
     <main class="max-w-[680px] mx-auto px-6 md:px-0">
       <!-- Hero Section -->
       <section
-        class="pt-12 md:pt-20 pb-12 md:pb-section-gap flex flex-col gap-6"
+        class="pt-12 md:pt-16 pb-12 md:pb-section-gap flex flex-col gap-5"
       >
+        <!-- Inline Header (Logo + Resume Link) -->
+        <div class="flex justify-between items-center w-full mb-8">
+          <a class="flex items-center gap-0 text-on-surface" href="#" aria-label="Home">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="6" fill="currentColor"/><text x="14" y="19" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="currentColor" class="text-surface dark:text-background" style="fill: var(--logo-fill, #fafafa)">PV</text></svg>
+          </a>
+          <a
+            class="inline-flex items-center gap-1 text-body-md text-secondary hover:text-primary transition-colors"
+            href="https://drive.google.com/file/d/1jFnyVP4ALa4JlodRe44ODFuIXTch21mJ/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
         <h1 class="text-display-mobile md:text-display text-on-surface">
-          Hi, I'm Parth Vyas
+          Parth Vyas
         </h1>
+        <p class="text-headline-md text-on-surface font-semibold">Software Engineer</p>
         <p class="text-body-lg text-secondary max-w-prose">
-          Developer, problem-solver, and tech enthusiast with a passion for
-          building software that makes a difference.
+          Software engineer with 3+ years building web apps. React, Node.js, and real shipped work.
         </p>
-        <div class="flex flex-wrap gap-x-3 gap-y-2 pt-4">
-          <span
-            class="text-label-caps text-secondary bg-surface-container border border-outline/10 px-2.5 py-1 rounded-md hover:bg-surface-container-high transition-colors duration-200"
-            >REACT.JS</span
+        <div class="pt-4">
+          <a
+            href="https://wa.me/917201982098?text=Hi%20Parth%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-white text-body-md font-semibold hover:opacity-90 transition-opacity duration-200"
           >
-          <span
-            class="text-label-caps text-secondary bg-surface-container border border-outline/10 px-2.5 py-1 rounded-md hover:bg-surface-container-high transition-colors duration-200"
-            >NODE.JS</span
-          >
-          <span
-            class="text-label-caps text-secondary bg-surface-container border border-outline/10 px-2.5 py-1 rounded-md hover:bg-surface-container-high transition-colors duration-200"
-            >PYTHON</span
-          >
-          <span
-            class="text-label-caps text-secondary bg-surface-container border border-outline/10 px-2.5 py-1 rounded-md hover:bg-surface-container-high transition-colors duration-200"
-            >MONGODB</span
-          >
-          <span
-            class="text-label-caps text-secondary bg-surface-container border border-outline/10 px-2.5 py-1 rounded-md hover:bg-surface-container-high transition-colors duration-200"
-            >POSTGRESQL</span
-          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.528 2.01 14.07 1.01 11.568 1.01c-5.437 0-9.862 4.371-9.866 9.8.001 2.028.532 4.018 1.547 5.765l-.99 3.613 3.792-.983zm13.15-7.798c-.27-.136-1.595-.788-1.843-.878-.247-.09-.427-.136-.607.136-.18.272-.697.878-.854 1.059-.158.18-.315.204-.585.068-.27-.136-1.14-.42-2.172-1.341-.803-.717-1.345-1.603-1.503-1.875-.158-.272-.017-.419.119-.554.122-.122.27-.317.405-.476.135-.159.18-.272.27-.453.09-.181.045-.34-.022-.476-.068-.136-.608-1.464-.833-2.007-.22-.53-.443-.458-.607-.466-.158-.008-.338-.01-.518-.01-.18 0-.472.068-.72.34-.247.272-.944.922-.944 2.25 0 1.328.966 2.61 1.101 2.791.135.18 1.9 2.9 4.606 4.074.644.279 1.147.445 1.54.57.647.206 1.237.177 1.702.107.519-.078 1.595-.65 1.82-1.278.225-.629.225-1.17.158-1.278-.068-.109-.248-.154-.518-.29z"/>
+            </svg>
+            Let's Talk
+          </a>
         </div>
       </section>
 
       <!-- Work Section -->
       <section class="flex flex-col gap-8 pb-12 md:pb-section-gap" id="work">
         <h2
-          class="text-headline-md md:text-headline-lg border-b border-surface-variant/30 pb-4"
+          class="text-label-caps text-secondary uppercase tracking-wider border-b border-outline/10 pb-3"
         >
           Selected Work
         </h2>
@@ -235,7 +203,7 @@
       <!-- Other Projects Section -->
       <section class="flex flex-col gap-8 pb-12 md:pb-section-gap">
         <h2
-          class="text-headline-md md:text-headline-lg border-b border-surface-variant/30 pb-4"
+          class="text-label-caps text-secondary uppercase tracking-wider border-b border-outline/10 pb-3"
         >
           Other Projects
         </h2>
@@ -244,84 +212,24 @@
             class="flex flex-col gap-2 p-5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors duration-300"
           >
             <div class="flex justify-between items-baseline">
-              <h4 class="font-semibold text-on-surface">Template generator</h4>
-              <a
-                class="text-meta text-secondary hover:text-primary underline underline-offset-4"
-                target="_blank"
-                href="https://parthvyas7.github.io/template-generator/"
-                >Live</a
-              >
+              <h4 class="font-semibold text-on-surface">React Interview Questions</h4>
+              <div class="flex gap-3">
+                <a
+                  class="text-meta text-secondary hover:text-primary underline underline-offset-4"
+                  target="_blank"
+                  href="https://react-interview-questions-u855x.kinsta.page/"
+                  >Live</a
+                >
+                <a
+                  class="text-meta text-secondary hover:text-primary underline underline-offset-4"
+                  target="_blank"
+                  href="https://github.com/parthvyas7/react-interview-questions"
+                  >Code</a
+                >
+              </div>
             </div>
             <p class="text-meta text-secondary mt-1">
-              Quick & easy template generator for frequently sent messages.
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col gap-2 p-5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors duration-300"
-          >
-            <div class="flex justify-between items-baseline">
-              <h4 class="font-semibold text-on-surface">Writings.Dev</h4>
-              <a
-                class="text-meta text-secondary hover:text-primary underline underline-offset-4"
-                target="_blank"
-                href="http://writingsdev.rf.gd/"
-                >Live</a
-              >
-            </div>
-            <p class="text-meta text-secondary mt-1">
-              Blog page for developers focused on deep technical insights.
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col gap-2 p-5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors duration-300"
-          >
-            <div class="flex justify-between items-baseline">
-              <h4 class="font-semibold text-on-surface">TextUtils</h4>
-              <a
-                class="text-meta text-secondary hover:text-primary underline underline-offset-4"
-                target="_blank"
-                href="https://parthvyas7.github.io/barebones-textutils/"
-                >Live</a
-              >
-            </div>
-            <p class="text-meta text-secondary mt-1">
-              Clean UI for quick text manipulations.
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col gap-2 p-5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors duration-300"
-          >
-            <div class="flex justify-between items-baseline">
-              <h4 class="font-semibold text-on-surface">Currency converter</h4>
-              <a
-                class="text-meta text-secondary hover:text-primary underline underline-offset-4"
-                target="_blank"
-                href="https://currency-converterr.surge.sh/"
-                >Live</a
-              >
-            </div>
-            <p class="text-meta text-secondary mt-1">
-              Real-time exchange rate converter.
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col gap-2 p-5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors duration-300"
-          >
-            <div class="flex justify-between items-baseline">
-              <h4 class="font-semibold text-on-surface">Password Generator</h4>
-              <a
-                class="text-meta text-secondary hover:text-primary underline underline-offset-4"
-                target="_blank"
-                href="https://password-generator-react.tiiny.site/"
-                >Live</a
-              >
-            </div>
-            <p class="text-meta text-secondary mt-1">
-              Generate secure custom passwords using a simple React UI.
+              Commonly asked React.js Machine Coding Round problems in React-Typescript (tsx).
             </p>
           </div>
 
@@ -377,7 +285,7 @@
           </div>
 
           <div
-            class="flex flex-col gap-2 p-5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors duration-300 md:col-span-2"
+            class="flex flex-col gap-2 p-5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors duration-300"
           >
             <div class="flex justify-between items-baseline">
               <h4 class="font-semibold text-on-surface">Image Optimiser</h4>
@@ -393,17 +301,7 @@
               efficiently.
             </p>
           </div>
-        </div>
-      </section>
 
-      <!-- Take-home Assignments Section -->
-      <section class="flex flex-col gap-8 pb-12 md:pb-section-gap">
-        <h2
-          class="text-headline-md md:text-headline-lg border-b border-surface-variant/30 pb-4"
-        >
-          Assignments & Challenges
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-gap">
           <div
             class="flex flex-col gap-2 p-5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors duration-300"
           >
@@ -431,7 +329,7 @@
           </div>
 
           <div
-            class="flex flex-col gap-2 p-5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors duration-300"
+            class="flex flex-col gap-2 p-5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors duration-300 md:col-span-2"
           >
             <div class="flex justify-between items-baseline">
               <h4 class="font-semibold text-on-surface">Weather Dashboard</h4>
@@ -458,15 +356,12 @@
         </div>
       </section>
 
-      <!-- Log Section -->
-      <section class="pb-12 md:pb-section-gap flex flex-col gap-10" id="log">
+      <!-- Hits & Misses Section -->
+      <section class="pb-12 md:pb-section-gap flex flex-col gap-10" id="hits-misses">
         <div
-          class="flex justify-between items-end border-b border-surface-variant/30 pb-4"
+          class="border-b border-outline/10 pb-3"
         >
-          <h2 class="text-headline-md md:text-headline-lg">Log</h2>
-          <span class="text-meta text-secondary pb-1"
-            >Chronicle of Some Hits & Misses</span
-          >
+          <h2 class="text-label-caps text-secondary uppercase tracking-wider">Hits & Misses.</h2>
         </div>
         <!-- Section Intro Image -->
         <div
@@ -492,7 +387,7 @@
             class="pointer-events-none absolute inset-y-0 right-0 w-12 md:w-24 bg-gradient-to-l from-surface dark:from-background to-transparent z-10"
           ></div>
 
-          <div class="animate-marquee gap-4 flex flex-nowrap py-2 min-w-max">
+          <div class="animate-marquee gap-4 flex flex-nowrap py-2 min-w-max" id="marquee-container" style="animation-play-state: paused;">
             <!-- First set of items -->
             <div
               class="relative flex-shrink-0 h-[210px] md:h-[310px] aspect-[1184/527] rounded-lg overflow-hidden cursor-pointer group"
@@ -504,7 +399,7 @@
                 alt="AFCAT 2 2022 Result"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 AFCAT 2 2022 Result
               </div>
@@ -519,7 +414,7 @@
                 alt="BDA role"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 BDA role
               </div>
@@ -534,7 +429,7 @@
                 alt="CDAC Design Engineer"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 CDAC Design Engineer
               </div>
@@ -549,7 +444,7 @@
                 alt="CDSE 1 2022 Marksheet"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 CDSE 1 2022 Marksheet
               </div>
@@ -564,7 +459,7 @@
                 alt="CDSE 2 2022 Marksheet"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 CDSE 2 2022 Marksheet
               </div>
@@ -579,7 +474,7 @@
                 alt="CDSE 2 2022 Result"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 CDSE 2 2022 Result
               </div>
@@ -594,7 +489,7 @@
                 alt="CGCAT 02-2024"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 CGCAT 02-2024
               </div>
@@ -609,7 +504,7 @@
                 alt="Charter Member Certificate"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Charter Member Certificate
               </div>
@@ -624,7 +519,7 @@
                 alt="Community prize for Academics 1"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Community prize for Academics 1
               </div>
@@ -639,7 +534,7 @@
                 alt="Community prize for Academics 2"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Community prize for Academics 2
               </div>
@@ -654,7 +549,7 @@
                 alt="Failed in B.Tech. Sem 6 EBM"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Failed in B.Tech. Sem 6 EBM
               </div>
@@ -669,7 +564,7 @@
                 alt="Failure - CDSE 1 2021"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Failure - CDSE 1 2021
               </div>
@@ -684,7 +579,7 @@
                 alt="Failure - CGCAT 01-24 Result"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Failure - CGCAT 01-24 Result
               </div>
@@ -699,7 +594,7 @@
                 alt="Failure - Codechef Summer Internship 2020"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Failure - Codechef Summer Internship 2020
               </div>
@@ -714,7 +609,7 @@
                 alt="Failure - Unemployment Hits Hard"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Failure - Unemployment Hits Hard
               </div>
@@ -729,7 +624,7 @@
                 alt="First Job offer"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 First Job offer
               </div>
@@ -744,7 +639,7 @@
                 alt="freeCodeCamp Responsive Web Design Certification"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 freeCodeCamp Responsive Web Design Certification
               </div>
@@ -759,7 +654,7 @@
                 alt="Internship 1"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Internship 1
               </div>
@@ -774,7 +669,7 @@
                 alt="Internship 2"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Internship 2
               </div>
@@ -789,7 +684,7 @@
                 alt="Internship 3"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Internship 3
               </div>
@@ -804,7 +699,7 @@
                 alt="JEE Advanced Qualified"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 JEE Advanced Qualified
               </div>
@@ -819,7 +714,7 @@
                 alt="Learning How to Learn MOOC"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Learning How to Learn MOOC
               </div>
@@ -834,7 +729,7 @@
                 alt="Mindshift MOOC"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Mindshift MOOC
               </div>
@@ -849,7 +744,7 @@
                 alt="Odoo 19 Certification"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Odoo 19 Certification
               </div>
@@ -864,7 +759,7 @@
                 alt="Offer Letter 1"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 1
               </div>
@@ -879,7 +774,7 @@
                 alt="Offer Letter 2"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 2
               </div>
@@ -894,7 +789,7 @@
                 alt="Offer Letter 3"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 3
               </div>
@@ -909,7 +804,7 @@
                 alt="Offer Letter 4"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 4
               </div>
@@ -924,7 +819,7 @@
                 alt="Offer Letter 5"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 5
               </div>
@@ -939,7 +834,7 @@
                 alt="Offer Letter 6"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 6
               </div>
@@ -954,7 +849,7 @@
                 alt="Offer Letter 7"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 7
               </div>
@@ -969,7 +864,7 @@
                 alt="Offer Letter 8"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 8
               </div>
@@ -984,7 +879,7 @@
                 alt="Sanskrit Competition"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Sanskrit Competition
               </div>
@@ -999,7 +894,7 @@
                 alt="UPSC CDSE 2 2021 Marksheet"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 UPSC CDSE 2 2021 Marksheet
               </div>
@@ -1016,7 +911,7 @@
                 alt="AFCAT 2 2022 Result"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 AFCAT 2 2022 Result
               </div>
@@ -1031,7 +926,7 @@
                 alt="BDA role"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 BDA role
               </div>
@@ -1046,7 +941,7 @@
                 alt="CDAC Design Engineer"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 CDAC Design Engineer
               </div>
@@ -1061,7 +956,7 @@
                 alt="CDSE 1 2022 Marksheet"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 CDSE 1 2022 Marksheet
               </div>
@@ -1076,7 +971,7 @@
                 alt="CDSE 2 2022 Marksheet"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 CDSE 2 2022 Marksheet
               </div>
@@ -1091,7 +986,7 @@
                 alt="CDSE 2 2022 Result"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 CDSE 2 2022 Result
               </div>
@@ -1106,7 +1001,7 @@
                 alt="CGCAT 02-2024"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 CGCAT 02-2024
               </div>
@@ -1121,7 +1016,7 @@
                 alt="Charter Member Certificate"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Charter Member Certificate
               </div>
@@ -1136,7 +1031,7 @@
                 alt="Community prize for Academics 1"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Community prize for Academics 1
               </div>
@@ -1151,7 +1046,7 @@
                 alt="Community prize for Academics 2"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Community prize for Academics 2
               </div>
@@ -1166,7 +1061,7 @@
                 alt="Failed in B.Tech. Sem 6 EBM"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Failed in B.Tech. Sem 6 EBM
               </div>
@@ -1181,7 +1076,7 @@
                 alt="Failure - CDSE 1 2021"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Failure - CDSE 1 2021
               </div>
@@ -1196,7 +1091,7 @@
                 alt="Failure - CGCAT 01-24 Result"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Failure - CGCAT 01-24 Result
               </div>
@@ -1211,7 +1106,7 @@
                 alt="Failure - Codechef Summer Internship 2020"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Failure - Codechef Summer Internship 2020
               </div>
@@ -1226,7 +1121,7 @@
                 alt="Failure - Unemployment Hits Hard"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Failure - Unemployment Hits Hard
               </div>
@@ -1241,7 +1136,7 @@
                 alt="First Job offer"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 First Job offer
               </div>
@@ -1256,7 +1151,7 @@
                 alt="freeCodeCamp Responsive Web Design Certification"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 freeCodeCamp Responsive Web Design Certification
               </div>
@@ -1271,7 +1166,7 @@
                 alt="Internship 1"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Internship 1
               </div>
@@ -1286,7 +1181,7 @@
                 alt="Internship 2"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Internship 2
               </div>
@@ -1301,7 +1196,7 @@
                 alt="Internship 3"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Internship 3
               </div>
@@ -1316,7 +1211,7 @@
                 alt="JEE Advanced Qualified"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 JEE Advanced Qualified
               </div>
@@ -1331,7 +1226,7 @@
                 alt="Learning How to Learn MOOC"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Learning How to Learn MOOC
               </div>
@@ -1346,7 +1241,7 @@
                 alt="Mindshift MOOC"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Mindshift MOOC
               </div>
@@ -1361,7 +1256,7 @@
                 alt="Odoo 19 Certification"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Odoo 19 Certification
               </div>
@@ -1376,7 +1271,7 @@
                 alt="Offer Letter 1"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 1
               </div>
@@ -1391,7 +1286,7 @@
                 alt="Offer Letter 2"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 2
               </div>
@@ -1406,7 +1301,7 @@
                 alt="Offer Letter 3"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 3
               </div>
@@ -1421,7 +1316,7 @@
                 alt="Offer Letter 4"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 4
               </div>
@@ -1436,7 +1331,7 @@
                 alt="Offer Letter 5"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 5
               </div>
@@ -1451,7 +1346,7 @@
                 alt="Offer Letter 6"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 6
               </div>
@@ -1466,7 +1361,7 @@
                 alt="Offer Letter 7"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 7
               </div>
@@ -1481,7 +1376,7 @@
                 alt="Offer Letter 8"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Offer Letter 8
               </div>
@@ -1496,7 +1391,7 @@
                 alt="Sanskrit Competition"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 Sanskrit Competition
               </div>
@@ -1511,7 +1406,7 @@
                 alt="UPSC CDSE 2 2021 Marksheet"
               />
               <div
-                class="absolute bottom-2 left-2 bg-background/95 dark:bg-background/95 text-on-background text-xs px-2.5 py-1.5 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-outline/10"
+                class="absolute bottom-3 left-3 bg-surface/90 dark:bg-background/90 backdrop-blur-md text-on-surface dark:text-on-background text-xs font-semibold px-2.5 py-1.5 rounded-md shadow-sm border border-outline/10 pointer-events-none z-10 transition-all duration-300"
               >
                 UPSC CDSE 2 2021 Marksheet
               </div>
@@ -1530,73 +1425,25 @@
         class="flex flex-col md:flex-row justify-between items-center max-w-[680px] mx-auto px-6 md:px-0 gap-8"
       >
         <div class="flex flex-col items-center md:items-start gap-2">
-          <p class="text-meta text-secondary">Destined to be designed.</p>
+          <p class="text-meta text-secondary">Wins and losses. All receipts included.</p>
         </div>
 
-        <!-- Theme Switcher Capsule -->
-        <div
-          class="flex items-center gap-1 bg-surface-container dark:bg-surface-container border border-outline/10 p-1 rounded-full"
-        >
-          <button
-            id="theme-light"
-            class="theme-btn flex items-center gap-1.5 px-3 py-1.5 rounded-full text-meta text-secondary hover:text-primary transition-all duration-200"
-            title="Light mode"
+        <!-- Theme Switcher Dropdown -->
+        <div class="relative flex items-center">
+          <select
+            id="theme-select"
+            class="appearance-none bg-surface-container dark:bg-surface-container text-secondary hover:text-primary border border-outline/10 rounded-lg pl-3 pr-8 py-1.5 text-meta font-medium cursor-pointer focus:outline-none transition-colors duration-200"
+            aria-label="Select Theme"
           >
-            <svg
-              class="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-              />
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="system">System</option>
+          </select>
+          <div class="pointer-events-none absolute right-2.5 text-secondary flex items-center">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
-            <span class="sr-only sm:not-sr-only">Light</span>
-          </button>
-          <button
-            id="theme-dark"
-            class="theme-btn flex items-center gap-1.5 px-3 py-1.5 rounded-full text-meta text-secondary hover:text-primary transition-all duration-200"
-            title="Dark mode"
-          >
-            <svg
-              class="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-              />
-            </svg>
-            <span class="sr-only sm:not-sr-only">Dark</span>
-          </button>
-          <button
-            id="theme-system"
-            class="theme-btn flex items-center gap-1.5 px-3 py-1.5 rounded-full text-meta text-secondary hover:text-primary transition-all duration-200"
-            title="System preference"
-          >
-            <svg
-              class="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
-            <span class="sr-only sm:not-sr-only">System</span>
-          </button>
+          </div>
         </div>
 
         <div class="flex gap-6">
@@ -1663,11 +1510,34 @@
     <script>
       // Sync marquee animation using epoch time so it runs independently of scrolls/reloads
       (function () {
-        const marquee = document.querySelector(".animate-marquee");
+        const marquee = document.getElementById("marquee-container");
         if (marquee) {
           const duration = 50; // match Tailwind config animation duration
           const offset = (Date.now() / 1000) % duration;
+          // Apply epoch offset
           marquee.style.animationDelay = `-${offset}s`;
+          
+          let started = false;
+          // Keep paused for 3s initial delay on page load
+          marquee.style.animationPlayState = 'paused';
+          
+          setTimeout(() => {
+            started = true;
+            // Only start running if the cursor is NOT currently hovering over it
+            if (!marquee.matches(':hover')) {
+              marquee.style.animationPlayState = 'running';
+            }
+          }, 3000);
+
+          marquee.addEventListener('mouseenter', () => {
+            marquee.style.animationPlayState = 'paused';
+          });
+
+          marquee.addEventListener('mouseleave', () => {
+            if (started) {
+              marquee.style.animationPlayState = 'running';
+            }
+          });
         }
       })();
 
@@ -1685,7 +1555,7 @@
         });
       }, observerOptions);
 
-      document.querySelectorAll("section:not(#log)").forEach((section) => {
+      document.querySelectorAll("section:not(#hits-misses)").forEach((section) => {
         section.classList.add(
           "transition-all",
           "duration-700",
@@ -1697,41 +1567,7 @@
 
       // Theme Selection Script logic
       (function () {
-        const themeButtons = {
-          light: document.getElementById("theme-light"),
-          dark: document.getElementById("theme-dark"),
-          system: document.getElementById("theme-system"),
-        };
-
-        function updateThemeUI(activeTheme) {
-          Object.keys(themeButtons).forEach((key) => {
-            const btn = themeButtons[key];
-            if (!btn) return;
-            if (key === activeTheme) {
-              btn.classList.add(
-                "bg-surface",
-                "dark:bg-background",
-                "text-primary",
-                "shadow-sm",
-                "border",
-                "border-outline/5",
-                "font-semibold",
-              );
-              btn.classList.remove("text-secondary");
-            } else {
-              btn.classList.remove(
-                "bg-surface",
-                "dark:bg-background",
-                "text-primary",
-                "shadow-sm",
-                "border",
-                "border-outline/5",
-                "font-semibold",
-              );
-              btn.classList.add("text-secondary");
-            }
-          });
-        }
+        const themeSelect = document.getElementById("theme-select");
 
         function applyTheme(theme) {
           const isDark =
@@ -1743,23 +1579,22 @@
           } else {
             document.documentElement.classList.remove("dark");
           }
-          updateThemeUI(theme);
+          if (themeSelect) {
+            themeSelect.value = theme;
+          }
         }
 
-        // Initialize theme UI
+        // Initialize theme selector
         const savedTheme = localStorage.getItem("theme") || "system";
         applyTheme(savedTheme);
 
-        // Click listeners
-        Object.keys(themeButtons).forEach((theme) => {
-          const btn = themeButtons[theme];
-          if (btn) {
-            btn.addEventListener("click", () => {
-              localStorage.setItem("theme", theme);
-              applyTheme(theme);
-            });
-          }
-        });
+        if (themeSelect) {
+          themeSelect.addEventListener("change", (e) => {
+            const theme = e.target.value;
+            localStorage.setItem("theme", theme);
+            applyTheme(theme);
+          });
+        }
 
         // Listen for system preference changes
         window
