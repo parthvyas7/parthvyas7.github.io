@@ -110,8 +110,9 @@
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-white text-body-md font-semibold hover:opacity-90 transition-opacity duration-200"
           >
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.528 2.01 14.07 1.01 11.568 1.01c-5.437 0-9.862 4.371-9.866 9.8.001 2.028.532 4.018 1.547 5.765l-.99 3.613 3.792-.983zm13.15-7.798c-.27-.136-1.595-.788-1.843-.878-.247-.09-.427-.136-.607.136-.18.272-.697.878-.854 1.059-.158.18-.315.204-.585.068-.27-.136-1.14-.42-2.172-1.341-.803-.717-1.345-1.603-1.503-1.875-.158-.272-.017-.419.119-.554.122-.122.27-.317.405-.476.135-.159.18-.272.27-.453.09-.181.045-.34-.022-.476-.068-.136-.608-1.464-.833-2.007-.22-.53-.443-.458-.607-.466-.158-.008-.338-.01-.518-.01-.18 0-.472.068-.72.34-.247.272-.944.922-.944 2.25 0 1.328.966 2.61 1.101 2.791.135.18 1.9 2.9 4.606 4.074.644.279 1.147.445 1.54.57.647.206 1.237.177 1.702.107.519-.078 1.595-.65 1.82-1.278.225-.629.225-1.17.158-1.278-.068-.109-.248-.154-.518-.29z"/>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04.918-1.04 2.238 0 1.321.957 2.596 1.09 2.775.133.18 1.882 2.876 4.564 4.033.637.275 1.134.439 1.522.562.64.203 1.222.175 1.683.106.513-.077 1.582-.648 1.806-1.274.223-.626.223-1.162.156-1.274-.066-.111-.264-.186-.561-.335z"/>
+              <path d="M12.004 0C5.372 0 .006 5.365.006 11.998c0 2.115.549 4.172 1.594 5.992L.063 24l6.157-1.613a11.946 11.946 0 005.784 1.476h.005c6.627 0 11.994-5.365 11.994-11.998C24.003 5.366 18.636.001 12.004 0zm0 21.96h-.004a9.96 9.96 0 01-5.078-1.39l-.364-.216-3.775.99 1.008-3.681-.237-.376A9.928 9.928 0 012.041 12C2.041 6.478 6.487 2.033 12.008 2.033c2.67 0 5.18 1.04 7.069 2.929a9.94 9.94 0 012.929 7.07c-.002 5.52-4.447 9.965-9.966 9.965l-.036.002z"/>
             </svg>
             Let's Talk
           </a>
@@ -126,7 +127,7 @@
           Work Experience
         </h2>
 
-        <div class="relative border-l border-outline/10 ml-3 pl-6 md:pl-8 flex flex-col gap-8">
+        <div class="relative border-l border-outline/10 ml-3 pl-6 md:pl-8 flex flex-col gap-10">
           
           <!-- Experience 1: Odoo -->
           <div class="group relative flex flex-col gap-1.5">
@@ -145,6 +146,12 @@
             <div class="text-body-md text-secondary font-medium">
               Odoo <span class="text-outline/40 mx-1.5">•</span> Gandhinagar
             </div>
+            
+            <ul class="list-disc list-outside ml-4 mt-2 flex flex-col gap-2.5 text-body-md text-secondary leading-relaxed">
+              <li>Improved Odoo website builder performance & SEO by optimising <code class="font-mono text-[0.9em] bg-surface-container px-1.5 py-0.5 rounded border border-outline/5">/robots.txt</code> delivery (277% higher throughput, 73% lower latency).</li>
+              <li>Enhanced frontend UI/UX and editor reliability by fixing pop-up interactions and snippet rendering issues.</li>
+              <li>Resolved advanced theming and CSS inheritance issues to preserve manual styles and deliver consistent visual customisation.</li>
+            </ul>
           </div>
 
           <!-- Experience 2: MissCallPay -->
@@ -164,6 +171,11 @@
             <div class="text-body-md text-secondary font-medium">
               MissCallPay <span class="text-outline/40 mx-1.5">•</span> Ahmedabad
             </div>
+            
+            <ul class="list-disc list-outside ml-4 mt-2 flex flex-col gap-2.5 text-body-md text-secondary leading-relaxed">
+              <li>Built full-stack features for a UPI123Pay platform with Flutter mobile frontend using Node.js and Next.js, including Axis Bank BBPS API integration, mandate/AutoPay via IVR, merchant onboarding, authentication flows, and transaction/SMS APIs; improved performance and scalability of biller pages.</li>
+              <li>Created centralized bank SDKs (YES Bank & IDFC) with unified error handling, analytics, and debugging; developed Tata Power QR/app/IVR bill payment UI, merchant registration, reducing manual effort.</li>
+            </ul>
           </div>
 
           <!-- Experience 3: Freelance Developer -->
@@ -202,6 +214,11 @@
             <div class="text-body-md text-secondary font-medium">
               Apra Labs <span class="text-outline/40 mx-1.5">•</span> Bangalore
             </div>
+            
+            <ul class="list-disc list-outside ml-4 mt-2 flex flex-col gap-2.5 text-body-md text-secondary leading-relaxed">
+              <li>Engineered automation bash scripts, reducing CI/CD time for BluB0x Person Reader device software builds by 16%, significantly improving development efficiency.</li>
+              <li>Designed and implemented UI features for BluB0x Person Reader in React.js to enhance front-end performance.</li>
+            </ul>
           </div>
 
           <!-- Experience 5: Crest Data Systems -->
@@ -221,6 +238,11 @@
             <div class="text-body-md text-secondary font-medium">
               Crest Data Systems <span class="text-outline/40 mx-1.5">•</span> Ahmedabad
             </div>
+            
+            <ul class="list-disc list-outside ml-4 mt-2 flex flex-col gap-2.5 text-body-md text-secondary leading-relaxed">
+              <li>Developed solutions for Splunk® User Behaviour Analytics, reducing cluster setup time by 33%.</li>
+              <li>Collaborated in Agile teams, ensuring timely project delivery via sprint planning and retrospectives.</li>
+            </ul>
           </div>
 
         </div>
